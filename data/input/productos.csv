@@ -1,0 +1,8 @@
+id_producto,producto,categoria,costo_unitario
+P001,Laptop Básica,Tecnología,1100
+P002,Monitor 27,Tecnología,1600
+P003,Mouse Inalámbrico,Accesorios,500
+P004,Silla Ejecutiva,Mobiliario,2300
+P005,Teclado Mecánico,Accesorios,700
+P006,Escritorio,Mobiliario,1250
+P007,Webcam HD,Accesorios,1800

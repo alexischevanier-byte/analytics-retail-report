@@ -1,0 +1,11 @@
+id_cliente,cliente,ciudad,segmento
+C001,Cliente Alpha,CDMX,Corporativo
+C002,cliente beta,Monterrey,PyME
+C003,CLIENTE GAMMA,Guadalajara,Corporativo
+C004,Cliente Delta,Puebla,PyME
+C005, Cliente Epsilon ,CDMX,Corporativo
+C006,Cliente Zeta,Querétaro,PyME
+C007,Cliente Eta,Monterrey,Corporativo
+C008,Cliente Theta,Guadalajara,PyME
+C009,Cliente Iota,CDMX,Corporativo
+C010,Cliente Kappa,Puebla,
