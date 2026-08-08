@@ -1,5 +1,6 @@
 from pipeline.extract import cargar_datos
 from pipeline.validate import validar_datos
+from pipeline.transform import transformar_datos
 import logging
 
 def main():
@@ -14,6 +15,9 @@ def main():
     if not datos_validos:
         logging.error("Validación de datos fallida. Terminando el programa.")
         raise SystemExit("Error en la validación de datos. Verifique los archivos de entrada.")
+
+    datos_transformados = transformar_datos(datos)
+    print(datos_transformados['ventas'])
 
     
 
