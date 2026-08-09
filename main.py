@@ -18,8 +18,8 @@ def main():
 
     datos_transformados = transformar_datos(datos)
     print(datos_transformados['ventas'])
-
-    
+    print(datos_transformados['clientes'])
+    print(datos_transformados['productos'])
 
 if __name__ == "__main__":
     main()
