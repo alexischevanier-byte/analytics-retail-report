@@ -1,6 +1,7 @@
 from pipeline.extract import cargar_datos
 from pipeline.validate import validar_datos
 from pipeline.transform import transformar_datos
+from pipeline.merge import unir_clientes
 import logging
 
 def main():
@@ -17,9 +18,9 @@ def main():
         raise SystemExit("Error en la validación de datos. Verifique los archivos de entrada.")
 
     datos_transformados = transformar_datos(datos)
-    print(datos_transformados['ventas'])
-    print(datos_transformados['clientes'])
-    print(datos_transformados['productos'])
+
+    merge_1 = unir_clientes(datos_transformados['ventas'], datos_transformados['clientes'])
+    print(merge_1)
 
 if __name__ == "__main__":
     main()
