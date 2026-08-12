@@ -30,7 +30,11 @@ def unir_productos(ventas,productos):
 
     if productos_desconocidos > 0:
         logging.warning(f"existen {productos_desconocidos} productos sin informacion")
-        ventas = ventas.drop(ventas.loc[ventas['estado_merge'] == 'left_only'])
-        ventas = ventas.reset_index(inplace=True)
+
+    ventas = ventas.drop(ventas.loc[ventas['estado_merge'] == 'left_only'].index)
+
+    ventas = ventas.drop(columns=['estado_merge'])
+
+    ventas = ventas.reset_index(drop=True)
 
     return ventas
