@@ -4,6 +4,7 @@ from pipeline.transform import transformar_datos
 from pipeline.merge import unir_clientes
 from pipeline.merge import unir_productos
 from pipeline.metrics import calcular_metricas
+from pipeline.report import generar_reporte
 import logging
 
 def main():
@@ -26,7 +27,8 @@ def main():
     dataset_completo = unir_productos(datos_con_clientes, datos_transformados['productos'])
 
     metricas = calcular_metricas(dataset_completo)
-    print(metricas)
+
+    generar_reporte(dataset_completo, metricas)
 
 if __name__ == "__main__":
     main()
